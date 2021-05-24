@@ -48,7 +48,7 @@ defmodule ExFontawesome.MixProject do
 
   defp description() do
     """
-    This package adds a convenient way of using [Font Awesome](https://fontawesome.com) SVGs with your Phoenix, Phoenix LiveView and Surface applications.
+    This package adds a convenient way of using Font Awesome SVGs with your Phoenix, Phoenix LiveView and Surface applications.
     """
   end
 
