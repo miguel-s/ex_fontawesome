@@ -1,5 +1,7 @@
 # FontAwesome
 
+![CI](https://github.com/miguel-s/ex_fontawesome/actions/workflows/ci.yml/badge.svg)
+
 This package adds a convenient way of using [Font Awesome](https://fontawesome.com) SVGs with your Phoenix, Phoenix LiveView and Surface applications.
 
 You can find the original docs [here](https://fontawesome.com) and repo [here](https://github.com/FortAwesome/Font-Awesome).
