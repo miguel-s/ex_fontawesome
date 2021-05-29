@@ -10,7 +10,7 @@ defmodule FontAwesome do
 
       def deps do
         [
-          {:ex_fontawesome, "~> 0.1.0"}
+          {:ex_fontawesome, "~> 0.1.1"}
         ]
       end
 
