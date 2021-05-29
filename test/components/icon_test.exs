@@ -28,6 +28,28 @@ defmodule FontAwesome.Components.IconTest do
     assert html =~ ~s(<svg class="h-4 w-4")
   end
 
+  test "renders icon with opts" do
+    html =
+      render_surface do
+        ~H"""
+        <Icon type="regular" name="address-book" opts={{ aria_hidden: true }} />
+        """
+      end
+
+    assert html =~ ~s(<svg aria-hidden="true")
+  end
+
+  test "class prop overrides opts prop" do
+    html =
+      render_surface do
+        ~H"""
+        <Icon type="regular" name="address-book" class="hello" opts={{ class: "world" }} />
+        """
+      end
+
+    assert html =~ ~s(<svg class="hello")
+  end
+
   test "raises if type or icon don't exist" do
     msg = ~s(icon of type "hello" with name "address-book" does not exist.)
 
