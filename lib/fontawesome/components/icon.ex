@@ -26,7 +26,7 @@ if Code.ensure_loaded?(Surface) do
       opts = class_to_opts(assigns) ++ assigns.opts
 
       ~H"""
-      {{ FontAwesome.icon(@type, @name, opts) }}
+      { FontAwesome.icon(@type, @name, opts) }
       """
     end
 
