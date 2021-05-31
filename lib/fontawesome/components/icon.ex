@@ -25,7 +25,7 @@ if Code.ensure_loaded?(Surface) do
     def render(assigns) do
       opts = class_to_opts(assigns) ++ assigns.opts
 
-      ~H"""
+      ~F"""
       { FontAwesome.icon(@type, @name, opts) }
       """
     end
