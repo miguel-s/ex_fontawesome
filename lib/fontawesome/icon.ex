@@ -6,7 +6,7 @@ defmodule FontAwesome.Icon do
   alias __MODULE__
 
   @doc """
-  Defines the Heroicons.Icon struct.
+  Defines the FontAwesome.Icon struct.
 
   Its fields are:
 
