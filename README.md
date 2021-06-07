@@ -12,7 +12,7 @@ Add `ex_fontawesome` to the list of dependencies in `mix.exs`:
 
     def deps do
       [
-        {:ex_fontawesome, "~> 0.1.1"}
+        {:ex_fontawesome, "~> 0.2.0"}
       ]
     end
 
