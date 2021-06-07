@@ -20,14 +20,26 @@ Then run `mix deps.get`.
 
 ## Usage
 
-### With Eex or Leex
+#### With Eex or Leex
 
 ```elixir
-<%= Fontawesome.icon("regular", "address-book", class: "h-4 w-4") %>
+<%= Fontawesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
 ```
 
-### With Surface
+#### With Surface
 
 ```elixir
-<Fontawesome.Components.Icon type="regular" name="address-book" class="h-4 w-4" />
+<Fontawesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
 ```
+
+## Config
+
+Defaults can be set in the `FontAwesome` application configuration.
+
+```elixir
+config :ex_fontawesome, type: "regular"
+```
+
+## License
+
+MIT. See [LICENSE](https://github.com/miguel-s/ex_fontawesome/blob/master/LICENSE) for more details.
