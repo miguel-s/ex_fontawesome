@@ -1,3 +1,13 @@
+## v0.2.0-dev
+
+#### Breaking Changes
+
+- Replaced `icon/3` with `icon/2`, the `type` argument should be passed as an option instead
+
+#### Enhancements
+
+- Added `:type` to config for setting the default icon type
+
 ## v0.1.1 (2021-05-29)
 
 - All options passed to `icon/3` will be added to the SVG tag as HTML attributes
