@@ -5,16 +5,20 @@ if Code.ensure_loaded?(Surface) do
 
     ## Examples
 
-        <FontAwesome.Components.Icon type="regular" name="address-book" class="h-4 w-4" />
+        <FontAwesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
     """
 
     use Surface.Component
 
-    @doc "The type of the icon"
-    prop type, :string, values: ["brand", "regular", "solid"], required: true
-
     @doc "The name of the icon"
     prop name, :string, required: true
+
+    @doc """
+    The type of the icon
+
+    Required if default type is not configured.
+    """
+    prop type, :string
 
     @doc "The class of the icon"
     prop class, :css_class
@@ -23,17 +27,27 @@ if Code.ensure_loaded?(Surface) do
     prop opts, :keyword, default: []
 
     def render(assigns) do
-      opts = class_to_opts(assigns) ++ assigns.opts
-
       ~F"""
-      { FontAwesome.icon(@type, @name, opts) }
+      {{ FontAwesome.icon(@name, type_to_opts(@type) ++ class_to_opts(@class) ++ @opts) }}
       """
     end
 
-    defp class_to_opts(assigns) do
-      case Map.get(assigns, :class) do
-        nil -> []
-        class -> [class: Surface.css_class(class)]
+    defp type_to_opts(type) do
+      type = type || FontAwesome.default_type()
+
+      unless type do
+        raise ArgumentError,
+              "type prop is required if default type is not configured."
+      end
+
+      [type: type]
+    end
+
+    defp class_to_opts(class) do
+      if class do
+        [class: Surface.css_class(class)]
+      else
+        []
       end
     end
   end
