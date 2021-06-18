@@ -13,8 +13,8 @@ defmodule FontAwesome.Components.IconTest do
     end
 
     def render(assigns) do
-      ~H"""
-      <Icon name="address-book" type="regular" opts={{ aria_hidden: @aria_hidden }} />
+      ~F"""
+      <Icon name="address-book" type="regular" opts={aria_hidden: @aria_hidden} />
       """
     end
   end
@@ -22,7 +22,7 @@ defmodule FontAwesome.Components.IconTest do
   test "renders icon" do
     html =
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="address-book" type="regular" />
         """
       end
@@ -33,7 +33,7 @@ defmodule FontAwesome.Components.IconTest do
   test "renders icon with class" do
     html =
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="address-book" type="regular" class="h-4 w-4" />
         """
       end
@@ -44,8 +44,8 @@ defmodule FontAwesome.Components.IconTest do
   test "renders icon with opts" do
     html =
       render_surface do
-        ~H"""
-        <Icon name="address-book" type="regular" opts={{ aria_hidden: true }} />
+        ~F"""
+        <Icon name="address-book" type="regular" opts={aria_hidden: true} />
         """
       end
 
@@ -55,8 +55,8 @@ defmodule FontAwesome.Components.IconTest do
   test "class prop overrides opts prop" do
     html =
       render_surface do
-        ~H"""
-        <Icon name="address-book" type="regular" class="hello" opts={{ class: "world" }} />
+        ~F"""
+        <Icon name="address-book" type="regular" class="hello" opts={class: "world"} />
         """
       end
 
@@ -68,7 +68,7 @@ defmodule FontAwesome.Components.IconTest do
 
     assert_raise ArgumentError, msg, fn ->
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="hello" type="regular" />
         """
       end
@@ -80,7 +80,7 @@ defmodule FontAwesome.Components.IconTest do
 
     assert_raise ArgumentError, msg, fn ->
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="hello" />
         """
       end
@@ -92,7 +92,7 @@ defmodule FontAwesome.Components.IconTest do
 
     assert_raise ArgumentError, msg, fn ->
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="address-book" type="world" />
         """
       end
@@ -122,7 +122,7 @@ defmodule FontAwesome.Components.IconConfigTest do
 
     html =
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="address-book" />
         """
       end
@@ -137,7 +137,7 @@ defmodule FontAwesome.Components.IconConfigTest do
 
     assert_raise ArgumentError, msg, fn ->
       render_surface do
-        ~H"""
+        ~F"""
         <Icon name="address-book" />
         """
       end
