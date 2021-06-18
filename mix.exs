@@ -32,8 +32,7 @@ defmodule ExFontawesome.MixProject do
       {:phoenix_html, "~> 2.14"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
       {:floki, ">= 0.30.0", only: :test},
-      {:surface,
-       git: "https://github.com/surface-ui/surface", branch: "surface-next", optional: true}
+      {:surface, "~> 0.5", optional: true}
     ]
   end
 

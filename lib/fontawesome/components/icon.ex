@@ -28,7 +28,7 @@ if Code.ensure_loaded?(Surface) do
 
     def render(assigns) do
       ~F"""
-      {{ FontAwesome.icon(@name, type_to_opts(@type) ++ class_to_opts(@class) ++ @opts) }}
+      { FontAwesome.icon(@name, type_to_opts(@type) ++ class_to_opts(@class) ++ @opts) }
       """
     end
 
