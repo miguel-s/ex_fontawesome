@@ -1,7 +1,7 @@
-defmodule FontAwesome.Components.IconTest do
+defmodule FontAwesome.Surface.IconTest do
   use FontAwesome.ConnCase, async: true
 
-  alias FontAwesome.Components.Icon
+  alias FontAwesome.Surface.Icon
 
   defmodule ViewWithIcon do
     use Surface.LiveView
@@ -112,10 +112,10 @@ defmodule FontAwesome.Components.IconTest do
   end
 end
 
-defmodule FontAwesome.Components.IconConfigTest do
+defmodule FontAwesome.Surface.IconConfigTest do
   use FontAwesome.ConnCase
 
-  alias FontAwesome.Components.Icon
+  alias FontAwesome.Surface.Icon
 
   test "renders icon with default type" do
     Application.put_env(:ex_fontawesome, :type, "regular")
