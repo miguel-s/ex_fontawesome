@@ -20,11 +20,11 @@ defmodule FontAwesome do
 
   #### With Eex or Leex
 
-      <%= Fontawesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
+      <%= FontAwesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
 
   #### With Surface
 
-      <Fontawesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
+      <FontAwesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
 
   ## Config
 

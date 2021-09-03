@@ -23,13 +23,13 @@ Then run `mix deps.get`.
 #### With Eex or Leex
 
 ```elixir
-<%= Fontawesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
+<%= FontAwesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
 ```
 
 #### With Surface
 
 ```elixir
-<Fontawesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
+<FontAwesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
 ```
 
 ## Config
