@@ -1,4 +1,4 @@
-## v0.3.1 (WIP)
+## v0.3.1 (2021-09-03)
 
 - Added support for Phoenix HTML v0.3
 
