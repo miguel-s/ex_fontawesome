@@ -1,7 +1,7 @@
 defmodule ExFontawesome.MixProject do
   use Mix.Project
 
-  @version "0.3.1"
+  @version "0.4.0"
 
   def project do
     [
@@ -32,7 +32,8 @@ defmodule ExFontawesome.MixProject do
       {:phoenix_html, "~> 2.14 or ~> 3.0"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
       {:floki, ">= 0.30.0", only: :test},
-      {:surface, "~> 0.5", optional: true}
+      {:phoenix_live_view, "~> 0.16", optional: true},
+      {:surface, "~> 0.5.2", optional: true}
     ]
   end
 
@@ -42,10 +43,12 @@ defmodule ExFontawesome.MixProject do
       source_ref: "v#{@version}",
       source_url: "https://github.com/miguel-s/ex_fontawesome",
       groups_for_modules: [
-        Components: ~r/FontAwesome.Component/
+        Liveview: ~r/FontAwesome.LiveView/,
+        Surface: ~r/FontAwesome.Surface/
       ],
       nest_modules_by_prefix: [
-        FontAwesome.Components
+        FontAwesome.LiveView,
+        FontAwesome.Surface
       ],
       extras: ["README.md"]
     ]
