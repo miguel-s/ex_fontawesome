@@ -1,5 +1,13 @@
 if Code.ensure_loaded?(Phoenix.LiveView) do
   defmodule FontAwesome.LiveView do
+    @moduledoc """
+    A Phoenix LiveView component for rendering Font Awesome icons.
+
+    ## Examples
+
+        <FontAwesome.LiveView.Icon name="address-book" type="regular" class="h-4 w-4" />
+    """
+
     use Phoenix.Component
 
     def icon(assigns) do
