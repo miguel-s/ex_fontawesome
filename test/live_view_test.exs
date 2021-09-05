@@ -78,9 +78,9 @@ defmodule FontAwesome.LiveViewTest do
     msg = ~s(icon "hello" with type "regular" does not exist.)
 
     assert_raise ArgumentError, msg, fn ->
-      ~H"""
+      h2s(~H"""
       <LiveView.icon name="hello" type="regular" />
-      """
+      """)
     end
   end
 
@@ -89,9 +89,9 @@ defmodule FontAwesome.LiveViewTest do
     msg = ~s(type prop is required if default type is not configured.)
 
     assert_raise ArgumentError, msg, fn ->
-      ~H"""
+      h2s(~H"""
       <LiveView.icon name="hello" />
-      """
+      """)
     end
   end
 
@@ -100,9 +100,9 @@ defmodule FontAwesome.LiveViewTest do
     msg = ~s(expected type to be one of #{inspect(FontAwesome.types())}, got: "world")
 
     assert_raise ArgumentError, msg, fn ->
-      ~H"""
+      h2s(~H"""
       <LiveView.icon name="address-book" type="world" />
-      """
+      """)
     end
   end
 
@@ -152,9 +152,9 @@ defmodule FontAwesome.LiveViewConfigTest do
     msg = ~s(expected default type to be one of #{inspect(FontAwesome.types())}, got: "world")
 
     assert_raise ArgumentError, msg, fn ->
-      ~H"""
+      h2s(~H"""
       <LiveView.icon name="address-book" />
-      """
+      """)
     end
   end
 end
