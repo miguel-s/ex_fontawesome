@@ -10,7 +10,7 @@ defmodule FontAwesome do
 
       def deps do
         [
-          {:ex_fontawesome, "~> 0.3.1"}
+          {:ex_fontawesome, "~> 0.4.0"}
         ]
       end
 
@@ -22,9 +22,13 @@ defmodule FontAwesome do
 
       <%= FontAwesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
 
+  #### With Heex
+
+      <FontAwesome.LiveView.icon name="address-book" type="regular" class="h-4 w-4" />
+
   #### With Surface
 
-      <FontAwesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
+      <FontAwesome.Surface.Icon name="address-book" type="regular" class="h-4 w-4" />
 
   ## Config
 

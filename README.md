@@ -12,7 +12,7 @@ Add `ex_fontawesome` to the list of dependencies in `mix.exs`:
 
     def deps do
       [
-        {:ex_fontawesome, "~> 0.3.1"}
+        {:ex_fontawesome, "~> 0.4.0"}
       ]
     end
 
@@ -26,10 +26,16 @@ Then run `mix deps.get`.
 <%= FontAwesome.icon("address-book", type: "regular", class: "h-4 w-4") %>
 ```
 
+#### With Heex
+
+```elixir
+<FontAwesome.LiveView.icon name="address-book" type="regular" class="h-4 w-4" />
+```
+
 #### With Surface
 
 ```elixir
-<FontAwesome.Components.Icon name="address-book" type="regular" class="h-4 w-4" />
+<FontAwesome.Surface.Icon name="address-book" type="regular" class="h-4 w-4" />
 ```
 
 ## Config
