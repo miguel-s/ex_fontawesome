@@ -1,7 +1,7 @@
 if Code.ensure_loaded?(Phoenix.LiveView) do
   defmodule FontAwesome.LiveView do
     @moduledoc """
-    A Phoenix LiveView component for rendering Font Awesome icons.
+    A LiveView component for rendering Font Awesome icons.
 
     ## Examples
 
