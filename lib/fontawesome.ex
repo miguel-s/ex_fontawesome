@@ -10,7 +10,7 @@ defmodule FontAwesome do
 
       def deps do
         [
-          {:ex_fontawesome, "~> 0.6.0"}
+          {:ex_fontawesome, "~> 0.7.0"}
         ]
       end
 
@@ -34,7 +34,7 @@ defmodule FontAwesome do
 
   Defaults can be set in the `FontAwesome` application configuration.
 
-      config :ex_hfontawesome, type: "regular"
+      config :ex_fontawesome, type: "regular"
 
   """
 
