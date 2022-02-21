@@ -1,3 +1,7 @@
+## v0.7.0 (2022-02-21)
+
+- Upgraded to FontAwesome v6.0.0
+
 ## v0.6.0 (2022-01-13)
 
 - Upgraded to Phoenix HTML v3.2
