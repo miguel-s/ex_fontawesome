@@ -4,6 +4,8 @@ defmodule FontAwesome do
 
   You can find the original docs [here](https://fontawesome.com) and repo [here](https://github.com/FortAwesome/Font-Awesome).
 
+  Current FontAwesome version: 6.1.1
+
   ## Installation
 
   Add `ex_fontawesome` to the list of dependencies in `mix.exs`:
