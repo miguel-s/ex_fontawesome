@@ -1,3 +1,7 @@
+## v0.7.2 (2022-09-06)
+
+- Upgraded to FontAwesome v6.2.0
+
 ## v0.7.1 (2022-03-24)
 
 - Upgraded to FontAwesome v6.1.1
