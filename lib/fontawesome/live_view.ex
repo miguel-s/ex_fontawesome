@@ -5,7 +5,7 @@ if Code.ensure_loaded?(Phoenix.LiveView) do
 
     ## Examples
 
-        <FontAwesome.LiveView.Icon name="address-book" type="regular" class="h-4 w-4" />
+        <FontAwesome.LiveView.icon name="address-book" type="regular" class="h-4 w-4" />
     """
 
     use Phoenix.Component
