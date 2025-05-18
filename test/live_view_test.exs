@@ -1,6 +1,6 @@
 defmodule FontAwesome.LiveViewTest do
   use FontAwesome.ConnCase, async: true
-  import Phoenix.LiveView.Helpers
+  import Phoenix.Component
 
   alias FontAwesome.LiveView
 
@@ -84,8 +84,7 @@ end
 
 defmodule FontAwesome.LiveViewConfigTest do
   use FontAwesome.ConnCase
-  import Phoenix.LiveView.Helpers
-
+  import Phoenix.Component
   alias FontAwesome.LiveView
 
   test "renders icon with default type" do
