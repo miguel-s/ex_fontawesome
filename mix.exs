@@ -1,7 +1,7 @@
 defmodule ExFontawesome.MixProject do
   use Mix.Project
 
-  @version "0.7.2"
+  @version "0.8.0"
 
   def project do
     [
@@ -29,11 +29,11 @@ defmodule ExFontawesome.MixProject do
 
   defp deps do
     [
-      {:phoenix_html, "~> 3.2"},
-      {:ex_doc, "~> 0.27", only: :dev, runtime: false},
-      {:floki, ">= 0.32.0", only: :test},
-      {:phoenix_live_view, "~> 0.17", optional: true},
-      {:surface, "~> 0.7", optional: true}
+      {:phoenix_html, "~> 4.0"},
+      {:ex_doc, "~> 0.38", only: :dev, runtime: false},
+      {:floki, ">= 0.38.0", only: :test},
+      {:phoenix_live_view, "~> 1.0", optional: true},
+      {:surface, "~> 0.12", optional: true}
     ]
   end
 

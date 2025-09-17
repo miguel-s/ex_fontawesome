@@ -6,7 +6,7 @@ This package adds a convenient way of using [Font Awesome](https://fontawesome.c
 
 You can find the original docs [here](https://fontawesome.com) and repo [here](https://github.com/FortAwesome/Font-Awesome).
 
-Current FontAwesome version: 6.2.0
+Current FontAwesome version: 7.0.1
 
 ## Installation
 
@@ -14,7 +14,7 @@ Add `ex_fontawesome` to the list of dependencies in `mix.exs`:
 
     def deps do
       [
-        {:ex_fontawesome, "~> 0.7.2"}
+        {:ex_fontawesome, "~> 0.8.0"}
       ]
     end
 
